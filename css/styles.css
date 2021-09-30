@@ -1,0 +1,59 @@
+.wrldslogo {
+    border-radius: 100px;
+    width: 100px;  
+}
+
+.login {
+    border-radius: 25px;
+    width: 50px;
+    position:absolute;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.menu {
+    font-size: 15px;
+    border: 1px solid;
+    align-items: center;
+    overflow: hidden;
+    color: black;
+    grid-area: menu;
+}
+
+.menu #mylinks {
+    display:none;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    left: 900px;
+    top: 100px;
+    border: solid 1px;
+}
+
+.icon {
+    position: relative;
+    left : 1025px;
+    bottom: 60px;
+}
+
+a{
+    border : 1px solid;
+    padding: 10px;
+    color: black;  
+}
+
+
+.grid-main{
+ display: grid;
+ grid-template-rows: 1fr 1fr 1fr;
+ grid-template-areas: 
+ 'menu'
+ 'main'
+ 'footer';
+}
