@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title> Create Forum </title>
+    <link rel="stylesheet" href="../css/stylesForum.css" >
+</head>
+<body>
+  
+
+<div class="container">
+  <div class="Meny">
+  <a href="../index.php" >Home</a>
+  <a href="PHP/LoginScript/login.php">Login</a>
+  <a href="HTML/Contact.html">Contact</a>
+  <a href="HTML/createForum.PHP">Post Forum! </a>
+  </div>
+
+  <div class="Title"> <h1> Create Your own Post!</h1> </div>
+
+  <div class="Logo">
+  <h1> Le Teaser! </h1>
+  </div>
+
+  <div class="Input">
+    <form class="skriv" method="post" action="../PHP/registrert.php">
+      <input placeholder="Title" type="text" name="Title"><br>
+      <textarea  style="resize: none;" placeholder="Text" class="textplass" type="text" name="Text"></textarea><br>
+      <input placeholder="Author" type="text" name="Author">
+      <input type="submit">
+     </form>
+  </div>
+
+  <div class="Rules"></div>
+</div>
+
+
+</body>

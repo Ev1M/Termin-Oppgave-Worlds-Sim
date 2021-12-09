@@ -14,7 +14,7 @@
           <a href="index.php" >Home</a>
           <a href="PHP/LoginScript/login.php">Login</a>
           <a href="HTML/Contact.html">Contact</a>
-          <a href="HTML/createForum.html">Post Forum! </a>
+          <a href="HTML/createForum.PHP">Post Forum! </a>
         </div>
         <div class="ForumListe">
           <div class="Lista">

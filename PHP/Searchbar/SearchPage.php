@@ -39,7 +39,7 @@
                       </div></a>";
                     }   
                 }else {
-                    echo " Empty:( ";
+                    echo "<h2>Empty:(</h2>";
                     }
 
             };

@@ -1,0 +1,68 @@
+.container {
+    display: grid; 
+    grid-template-columns: 0.7fr 1.3fr 1fr; 
+    grid-template-rows: 0.4fr 1.6fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Logo Title Meny"
+      ". Input Rules"
+      ". . ."; 
+  }
+  .Meny { grid-area: Meny;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+    .textplass{
+        height: 100%;
+    }
+
+    input{
+        padding: 10px;
+        margin: 20px;
+        width: 100%; 
+    }
+
+    textarea{
+        padding: 10px;
+        margin: 20px;
+        width: 100%; 
+    }
+
+    a{
+    color: black;
+    padding: 20px;
+    }
+  
+    a:link {
+      text-decoration: none;
+    }
+    
+    a:visited {
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    a:active {
+      text-decoration: underline;
+    }
+
+  .Title { grid-area: Title; }
+
+
+  .Logo { grid-area: Logo; 
+    font-size: 17px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    height: 80px;
+
+}
+  .Input { grid-area: Input; }
+  .Rules { grid-area: Rules; }

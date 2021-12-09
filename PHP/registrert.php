@@ -2,6 +2,10 @@
   include './SearchBar/dbh.php';
 ?>
 
+<head> 
+<link rel="stylesheet" href="../css/stylesForum.css" >
+</head>
+
 <?php
 
 date_default_timezone_set('Europe/Stockholm');
@@ -13,10 +17,11 @@ $Author = $_POST["Author"];
 
 $sql = "INSERT INTO forum (f_title, f_text, f_date, f_author) VALUES ('$Title', '$Text', '$Date', '$Author')";
 
-echo $sql;
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  echo "<h1>New record created successfully</h1>
+        <a id='beez' href='../index.php'>Home</a>";
+
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
