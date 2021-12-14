@@ -55,12 +55,6 @@
             </form>
         </div>
         </div>
-        <div class="Powered-By-Ev1"></div>
-      </div>
-
-      <div class="Powered-By-Ev1">
-    </div>
-
     <script src="js/script.js">
     </script>
 </body>
