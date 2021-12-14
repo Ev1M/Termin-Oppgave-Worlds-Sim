@@ -1,12 +1,11 @@
 <?php
-  include './PHP/Searchbar/dbh.php';
+  include './PHP/dbh.php';
 ?>
 
 <html>
 <head>
     <title> Tea  </title>
     <link rel="stylesheet" href="./css/styles.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="grid-main">
     <div class="container">
@@ -14,7 +13,7 @@
           <a href="index.php" >Home</a>
           <a href="PHP/LoginScript/login.php">Login</a>
           <a href="HTML/Contact.html">Contact</a>
-          <a href="HTML/createForum.PHP">Post Forum! </a>
+          <a href="HTML/createForum.html">Post Forum! </a>
         </div>
         <div class="ForumListe">
           <div class="Lista">
@@ -37,7 +36,7 @@
 
           if ($queryResult > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-              echo "<a href='./PHP/SearchBar/forum.php?title=".$row['f_title']."&date=".$row['f_date']."'> <div class='Forum-box'>
+              echo "<a href='./PHP/lageForum/forum.php?title=".$row['f_title']."&date=".$row['f_date']."'> <div class='Forum-box'>
               <h3>".$row['f_title']."</h3>
               <h3>".$row['f_date']."</h3>
               <h3>".$row['f_author']."</h3>

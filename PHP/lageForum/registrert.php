@@ -1,11 +1,17 @@
 <?php
-  include './SearchBar/dbh.php';
+  include '../dbh.php';
 ?>
 
 <head> 
 <link rel="stylesheet" href="../css/stylesForum.css" >
 </head>
+<body>
 
+<div class="Logo">
+  <h1> Le Teaser! </h1>
+  </div>
+
+</body>
 <?php
 
 date_default_timezone_set('Europe/Stockholm');
@@ -24,7 +30,7 @@ $sql = "INSERT INTO forum (f_title, f_text, f_date, f_author) VALUES ('$Title', 
 
 if ($conn->query($sql) === TRUE) {
   echo "<h1>New record created successfully</h1>
-        <a id='beez' href='../index.php'>Home</a>";
+        <a id='beez' href='../../index.php'>Home</a>";
 
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;

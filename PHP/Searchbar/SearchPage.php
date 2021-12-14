@@ -1,5 +1,5 @@
 <?php
-  include './dbh.php';
+  include '../dbh.php';
 ?>
 
 <html>
@@ -12,11 +12,12 @@
         <div class="Meny">
           <a href="../../index.php" >Home</a>
           <a href="PHP/LoginScript/login.php">Login</a>
-          <a href="HTML/Contact.html">Contact</a>
+          <a href="../../HTML/Contact.html">Contact</a>
+          <a href="HTML/createForum.html">Post Forum! </a>
         </div>
         
         <div class="Logo">
-            <h1> Teaser! </h1>
+            <h1> Le Teaser!! </h1>
         </div>
         
         <div class="Generelt-Forum">
@@ -41,7 +42,6 @@
                 }else {
                     echo "<h2>Empty:(</h2>";
                     }
-
             };
             ?>
         </div>
@@ -51,15 +51,13 @@
         echo "There are ".$queryResult." result(s)!";
             ?>
         </div>
-        <div class="Søkebaren">
+        <div class="Søkefelt">
           <div class="plassen">
-          <form action="./PHP/Searchbar/SearchPage.php" method="POST">
-            <input type="search" value="" id="SearchOfThaTea">
+          <form action="./SearchPage.php" method="POST">
+            <input name="search" type="search" alt="Søk etter din favoritt te!" id="SearchOfThaTea">
+            <button name="submit-search"> search </button>
             </form>
-          </div>
         </div>
-
-
+      </div>
     </div>  
- 
 </body>        
