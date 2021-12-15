@@ -19,9 +19,9 @@
           <div class="Lista">
             <ul style="list-style-type:none;">
                 <li>NypeTe <br><a class="kommentar">Nype te er favoritt til admin</a> </li>
-                <li>GreenTea <br><a class="kommentar">Garbadge</a></li>
-                <li>EarlGreyTea <br><a class="kommentar">Garbadge</a></li>
-                <li> English breakfast <br><a class="kommentar">olreit</a></li>
+                <li>GreenTea <br><a class="kommentar">Vet ikke</a></li>
+                <li>EarlGreyTea <br><a class="kommentar">Vet ikke</a></li>
+                <li> English breakfast <br><a class="kommentar">Vet ikke</a></li>
               </ul>
           </div>
         </div>

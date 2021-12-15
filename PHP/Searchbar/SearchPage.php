@@ -54,8 +54,8 @@
         <div class="Søkefelt">
           <div class="plassen">
           <form action="./SearchPage.php" method="POST">
-            <input name="search" type="search" alt="Søk etter din favoritt te!" id="SearchOfThaTea">
-            <button name="submit-search"> search </button>
+            <input type="search" alt="Søk etter din favoritt te!" id="SearchOfThaTea">
+            <button> search </button>
             </form>
         </div>
       </div>
