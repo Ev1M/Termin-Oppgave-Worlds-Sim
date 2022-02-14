@@ -50,7 +50,7 @@
           <div class="plassen">
           <form action="./PHP/Searchbar/SearchPage.php" method="POST">
             <input name="search" type="search" alt="Søk etter din favoritt te!" id="SearchOfThaTea">
-            <button name="submit-search"> search </button>
+            <button name="submit-search"> Search </button>
             </form>
         </div>
         </div>
