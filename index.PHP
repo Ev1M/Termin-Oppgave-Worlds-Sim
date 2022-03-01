@@ -18,10 +18,10 @@
         <div class="ForumListe">
           <div class="Lista">
             <ul style="list-style-type:none;">
-                <li>NypeTe <br><a class="kommentar">Nype te er favoritt til admin</a> </li>
+                <li>Nype-te <br><a class="kommentar">Nype-te er favoritt til admin</a> </li>
                 <li>GreenTea <br><a class="kommentar">Vet ikke</a></li>
                 <li>EarlGreyTea <br><a class="kommentar">Vet ikke</a></li>
-                <li> English breakfast <br><a class="kommentar">Vet ikke</a></li>
+                <li>English breakfast <br><a class="kommentar">Vet ikke</a></li>
               </ul>
           </div>
         </div>
