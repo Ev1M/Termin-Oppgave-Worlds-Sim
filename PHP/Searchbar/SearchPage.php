@@ -36,7 +36,7 @@
                       <h3>".$row['f_title']."</h3>
                       <h3>".$row['f_text']."</h3>
                       <h3>".$row['f_date']."</h3>
-                      <h3>".$row['f_author']."</h3>
+                      <h3>".$row['f_authour']."</h3>
                       </div></a>";
                     }   
                 }else {

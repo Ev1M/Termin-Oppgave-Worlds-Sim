@@ -39,7 +39,7 @@
               echo "<a href='./PHP/lageForum/forum.php?title=".$row['f_title']."&date=".$row['f_date']."'> <div class='Forum-box'>
               <h3>".$row['f_title']."</h3>
               <h3>".$row['f_date']."</h3>
-              <h3>".$row['f_author']."</h3>
+              <h3>".$row['f_authour']."</h3>
               </div></a>";
             };
           };
@@ -50,8 +50,8 @@
           <div class="plassen">
           <form action="./PHP/Searchbar/SearchPage.php" method="POST">
             <input name="search" type="search" alt="Søk etter din favoritt te!" id="SearchOfThaTea">
-            <button name="submit-search"> Search </button>
-            </form>
+            <button class="knapp" name="submit-search"> Search </button>
+            </form>   
         </div>
         </div>
     <script src="js/script.js">

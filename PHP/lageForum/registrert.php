@@ -25,7 +25,7 @@ $Title = mysqli_real_escape_string($conn, $Title);
 $Text = mysqli_real_escape_string($conn, $Text);
 $Author = mysqli_real_escape_string($conn, $Author);
 
-$sql = "INSERT INTO forum (f_title, f_text, f_date, f_author) VALUES ('$Title', '$Text', '$Date', '$Author')";
+$sql = "INSERT INTO forum (f_title, f_text, f_date, f_authour) VALUES ('$Title', '$Text', '$Date', '$Author')";
 
 
 if ($conn->query($sql) === TRUE) {
