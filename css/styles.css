@@ -137,7 +137,7 @@ a{
   font-size: 25px;
 }
   
-.knapp {
+button {
   visibility: hidden;
 }
 

@@ -24,20 +24,20 @@
         <?php
             if (isset($_POST['submit-search'])) {
                 $search = mysqli_real_escape_string($conn, $_POST['search']);
-                $sql = "SELECT * FROM forum WHERE f_title LIKE '%$search%' or f_text LIKE '%$search%' or f_author LIKE '%$search%'";
+                $sql = "SELECT * FROM forum WHERE f_title LIKE '%$search%' or f_text LIKE '%$search%' or f_authour LIKE '%$search%'";
                 $result = mysqli_query($conn, $sql);
                 $queryResult = mysqli_num_rows($result);
             
                 
 
-                if ($queryResult > 0) { 
-                    while ($row = mysqli_fetch_assoc($result)) {
-                      echo "<a href='./forum.php?title=".$row['f_title']."&date=".$row['f_date']."'> <div class='Forum-box'>
-                      <h3>".$row['f_title']."</h3>
-                      <h3>".$row['f_text']."</h3>
-                      <h3>".$row['f_date']."</h3>
-                      <h3>".$row['f_authour']."</h3>
-                      </div></a>";
+              if ($queryResult > 0) { 
+                  while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<a href='./forum.php?title=".$row['f_title']."&date=".$row['f_date']."'> <div class='Forum-box'>
+                    <h3>".$row['f_title']."</h3>
+                    <h3>".$row['f_text']."</h3>
+                    <h3>".$row['f_date']."</h3>                      
+                    <h3>".$row['f_authour']."</h3>
+                   </div></a>";
                     }   
                 }else {
                     echo "<h2>Empty:(</h2>";
