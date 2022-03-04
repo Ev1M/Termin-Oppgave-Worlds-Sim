@@ -12,3 +12,13 @@
 </form>
 
 </div>
+
+<?php
+
+if (isset($_GET["error"])) {
+    if ($_GET["error"] == "emptyinput") {
+        echo "<p> You have to fill in every textbox! </p>";
+    }
+}
+
+?>

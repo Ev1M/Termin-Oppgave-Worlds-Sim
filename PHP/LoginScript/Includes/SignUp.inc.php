@@ -4,9 +4,9 @@ if(isset($_POST["submit"])) {
     
 $name = $_POST["name"];
 $email = $_POST["E-mail"];
-$Uid = $_POST["Username"];
-$Pwd = $_POST["password"];
-$PwdRepeat = $_POST["pwdrepeat"];
+$Uid = $_POST["Uid"];
+$Pwd = $_POST["Pwd"];
+$PwdRepeat = $_POST["PwdRepeat"];
 
 require_once 'dbh.inc.php';
 require_once 'functions.inc.php';
@@ -31,11 +31,12 @@ if (PwdMatch($Pwd, $PwdRepeat) !== false) {
     exit();
 }
 
-if (uidExsist($conn, $username) !== false) {
+if (uidExsist($conn, $username, $email) !== false) {
     header("location: ../SignUp.php?error=usernametaken");
     exit();
 }
 
+createUser($conn, $name, $email, $Uid, $Pwd, $PwdRepeat);
 
 }else {
     header("location: ../SignUp.php");
