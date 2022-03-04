@@ -7,5 +7,18 @@ function emptyInputSingUp($name, $email, $Uid, $Pwd, $PwdRepeat){
         $result = false;
     }
 
+
+    return $result;
+}
+
+function InvalidUid($username){
+    $result;
+    if (!preg_match("/^[a-zA-Z0-9]*$/"), trim($_POST["username"]) ) {
+        $result = true;
+    } else {
+        $result = false;
+    }
+
+        
     return $result;
 }
