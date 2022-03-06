@@ -37,7 +37,7 @@
 
 if (isset($_GET["error"])) {
     if ($_GET["error"] == "emptyInput") {
-        echo "<p class='error' > You have to fill in every textbox! </p>";
+        echo "<p class='error'> You have to fill in every textbox! </p>";
     }else if ($_GET["error"] == "invaliduid") {
         echo "<p> That username is not available! </p>";
     }

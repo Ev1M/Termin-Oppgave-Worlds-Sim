@@ -1,12 +1,33 @@
-.container {  display: grid;
-    grid-template-columns: 0.7fr 1.6fr 0.7fr;
-    grid-template-rows: 0.3fr 1.7fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . Meny"
-      ". Login-Form .";
-  }
+.container {   display: grid; 
+  grid-template-columns: 1fr 0.9fr 1.1fr; 
+  grid-template-rows: 0.3fr 1.9fr; 
+  gap: 0px 0px; 
+  grid-template-areas:
+    ". . Meny"
+    ". Login-Form .";
+}
+
+.Login-Form {    display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.6fr 1.8fr 0.6fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Error"
+    "Input"
+    "button"; 
+  grid-area: Login-Form;
+  background-color: rgba(255, 228, 196);
+  border: 2px black dotted;
+}
+
+form {
+  text-align: center;
+}
+
+.Error { grid-area: Error; 
+  color: red;
+  font-size: 25px;
+}
 
   .Meny { grid-area: Meny;
     font-size: 20px;
@@ -35,21 +56,17 @@
     text-decoration: underline;
   }
   
-  .Login-Form { 
-      grid-area: Login-Form; 
-      margin: 50px;
-      padding: 150px;
-      text-align: center;
-      background-color: rgba(255, 228, 196);
-      border: 2px black dotted;
-    }
+
 
     input {
+        grid-area: Input;
         font-size: 25px;;
         padding: 50px;
     }
 
     button {
+      grid-area: button;
       font-size: 15px;
     }
+
 
