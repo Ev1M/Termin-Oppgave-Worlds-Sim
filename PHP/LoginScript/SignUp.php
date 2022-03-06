@@ -1,3 +1,9 @@
+
+<html>
+<head>
+    <title> Sing Up Page </title>
+    <link rel="stylesheet" href=".../css/stylesSignUpLogIn">
+</head>
 <div class="signup-form">
 
 <form action="Includes/SignUp.inc.php" method="post">
@@ -13,6 +19,7 @@
 
 </div>
 
+</html>
 <?php
 
 if (isset($_GET["error"])) {
