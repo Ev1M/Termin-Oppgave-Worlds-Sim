@@ -7,7 +7,12 @@
     ". Login-Form .";
 }
 
-.Login-Form {    display: grid; 
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.Login-Form {
+  display: grid; 
   grid-template-columns: 1fr; 
   grid-template-rows: 0.6fr 1.8fr 0.6fr; 
   gap: 0px 0px; 
@@ -17,16 +22,18 @@
     "button"; 
   grid-area: Login-Form;
   background-color: rgba(255, 228, 196);
-  border: 2px black dotted;
+  border: 2px black  solid;
+  border-radius: 50px;
 }
 
 form {
   text-align: center;
 }
 
-.Error { grid-area: Error; 
+.error { grid-area: Error; 
   color: red;
-  font-size: 25px;
+  font-size: 16px;
+  text-align: center;
 }
 
   .Meny { grid-area: Meny;
@@ -58,13 +65,13 @@ form {
   
 
 
-    input {
+    .input {
         grid-area: Input;
         font-size: 25px;;
         padding: 50px;
     }
 
-    button {
+    .button {
       grid-area: button;
       font-size: 15px;
     }

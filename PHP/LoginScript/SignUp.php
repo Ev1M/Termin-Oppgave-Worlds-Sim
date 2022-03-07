@@ -2,6 +2,9 @@
 <html>
 <head>
     <title> Sing Up Page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/stylesSignUpLogIn.css">
 </head>
 <body>
@@ -18,7 +21,19 @@
 
 <div class="Login-Form">
 
-<form action="Includes/SignUp.inc.php" method="post">
+<?php 
+
+if (isset($_GET["error"])) {
+    if ($_GET["error"] == "emptyInput") {
+        echo "<p class='error'> You have to fill in every textbox! </p>";
+    }else if ($_GET["error"] == "usernametaken") {
+        echo "<p class='error'> That username is not available! </p>";
+    }
+}
+
+?>
+
+<form action="Includes/SignUp.inc.php" method="post" class="input">
 
 <input type="text" name="name" placeholder="Full Name..."><br>
 <input type="text" name="E-mail" placeholder="E-mail adress..."><br>
@@ -33,14 +48,3 @@
 </div>
 </body>
 </html>
-<?php
-
-if (isset($_GET["error"])) {
-    if ($_GET["error"] == "emptyInput") {
-        echo "<p class='error'> You have to fill in every textbox! </p>";
-    }else if ($_GET["error"] == "invaliduid") {
-        echo "<p> That username is not available! </p>";
-    }
-}
-
-?>
