@@ -14,7 +14,11 @@
     margin: 20px;
 }
 
-    .textplass{
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.textplass{
         height: 100%;
     }
 

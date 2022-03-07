@@ -1,5 +1,6 @@
 <?php
   include '../dbh.php';
+  include '../font.php';
 ?>
 
 <html>

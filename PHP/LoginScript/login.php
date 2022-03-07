@@ -1,3 +1,7 @@
+<?php
+  include '../font.php';
+?>
+
 <head>
 <link rel="stylesheet" href="../../css/stylesSignUpLogIn.css">
 </head>
