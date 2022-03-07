@@ -1,10 +1,11 @@
+<?php
+  include './PHP/font.php';
+?>
+
 
 <html>
 <head>
     <title> Sing Up Page </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/stylesSignUpLogIn.css">
 </head>
 <body>
@@ -25,9 +26,15 @@
 
 if (isset($_GET["error"])) {
     if ($_GET["error"] == "emptyInput") {
-        echo "<p class='error'> You have to fill in every textbox! </p>";
+        echo "<p class='error'> You have to fill in all the fields! </p>";
     }else if ($_GET["error"] == "usernametaken") {
         echo "<p class='error'> That username is not available! </p>";
+    }else if ($_GET["error"] == "passwordsdontmatch") {
+        echo "<p class='error'> The passwords dont match! </p>";
+    }else if ($_GET["error"] == "invaliduid") {
+        echo "<p class='error'> Your name can only contain letters from A-Z and numbers! </p>";
+    }else if ($_GET["error"] == "invalidemail") {
+        echo "<p class='error'> That email is already in use. </p>";
     }
 }
 
