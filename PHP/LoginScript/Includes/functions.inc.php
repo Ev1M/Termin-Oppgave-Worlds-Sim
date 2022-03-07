@@ -7,7 +7,6 @@ function emptyInputSingUp($name, $email, $Uid, $Pwd, $PwdRepeat){
         $result = false;
     }
 
-
     return $result;
 }
 
@@ -88,3 +87,38 @@ function createUser($conn, $name, $email, $Uid, $Pwd, $PwdRepeat){
     exit();
    
    }
+   
+
+   function emptyInputLogin($Uid, $Pwd){
+    $result;
+    if (empty($Uid) || empty($Pwd)){
+        $result = true;
+    } else {
+        $result = false;
+    }
+
+    return $result;
+}
+
+function loginUser($conn, $username, $pwd) {
+    $uidExsist = uidExsist($conn, $username, $username);
+
+    if ($uidExsist === false) {
+        header("location: ../login.php?error=wrongLogin");
+        exit();
+    }    
+
+    $pwdHashed = $uidExsist["usersPwd"];
+    $checkPwd = password_verify($pwd, $pwdHashed);
+
+    if ($checkPwd === false) {
+        header("location: ../login.php?error=wrongLogin");
+        exit();
+    } else if($checkPwd === true) {
+        session_start();
+        $_SESSION["userId"] = $uidExsist["usersId"];
+        $_SESSION["userUid"] = $uidExsist["userUid"];
+        header("location: ../../index.php");
+
+    }
+}

@@ -1,5 +1,5 @@
 <?php
-  include './PHP/font.php';
+  include '../font.php';
 ?>
 
 
