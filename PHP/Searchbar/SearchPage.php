@@ -32,7 +32,7 @@
 
               if ($queryResult > 0) { 
                   while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<a href='./forum.php?title=".$row['f_title']."&date=".$row['f_date']."'> <div class='Forum-box'>
+                    echo "<a href='../lageForum/forum.php?title=".$row['f_title']."&date=".$row['f_date']."'> <div class='Forum-box'>
                     <h3>".$row['f_title']."</h3>
                     <h3>".$row['f_text']."</h3>
                     <h3>".$row['f_date']."</h3>                      
