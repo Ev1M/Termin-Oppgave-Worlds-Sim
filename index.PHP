@@ -12,7 +12,15 @@
     <div class="container">
         <div class="Meny">
           <a href="index.php" >Home</a>
-          <a href="PHP/LoginScript/login.php">Login</a>
+          <?php
+          if (isset($_SESSION["userUid"])) {
+            echo "<a href='PHP/LoginScript/profile.php'>Profile</a>";
+            echo "<a href='PHP/LoginScript/Includes/logout.inc.php'>Log out</a>";
+          } else {
+            echo "<a href='PHP/LoginScript/login.php'>Login</a>";
+            echo "<a href='PHP/LoginScript/SignUp.php'>Signup</a>";
+          }
+          ?>
           <a href="HTML/Contact.html">Contact</a>
           <a href="HTML/createForum.html">Post Forum! </a>
         </div>

@@ -2,24 +2,25 @@
     display: grid; 
     grid-template-columns: 0.7fr 1.3fr 1fr; 
     grid-template-rows: 0.4fr 1.6fr 1fr; 
-    gap: 0px 0px; 
+    gap: 0px 30px; 
     grid-template-areas: 
       "Logo Title Meny"
       ". Input Rules"
       ". . ."; 
   }
-  .Meny { grid-area: Meny;
-    font-size: 20px;
-    padding: 10px;
-    margin: 20px;
+.Meny { grid-area: Meny;
+   font-size: 20px;
+   padding: 10px;
+   margin: 20px;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
 }
 
+
 .textplass{
-        height: 100%;
+    height: 100%;
     }
 
     input{
