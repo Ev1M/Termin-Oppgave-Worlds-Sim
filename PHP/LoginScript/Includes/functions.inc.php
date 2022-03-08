@@ -89,19 +89,19 @@ function createUser($conn, $name, $email, $Uid, $Pwd, $PwdRepeat){
    }
    
 
-   function emptyInputLogin($Uid, $Pwd){
+   function emptyInputLogin($Uid, $pwd){
     $result;
-    if (empty($Uid) || empty($Pwd)){
+    if (empty($Uid) || empty($pwd)){
         $result = true;
     } else {
         $result = false;
     }
-
+    echo "works!";
     return $result;
 }
 
-function loginUser($conn, $username, $pwd) {
-    $uidExsist = uidExsist($conn, $username, $username);
+function loginUser($conn, $Uid, $pwd) {
+    $uidExsist = uidExsist($conn, $Uid, $Uid);
 
     if ($uidExsist === false) {
         header("location: ../login.php?error=wrongLogin");
@@ -112,13 +112,13 @@ function loginUser($conn, $username, $pwd) {
     $checkPwd = password_verify($pwd, $pwdHashed);
 
     if ($checkPwd === false) {
-        header("location: ../login.php?error=wrongLogin");
+        header("location: ../login.php?error=passordFeil");
         exit();
     } else if($checkPwd === true) {
         session_start();
         $_SESSION["userId"] = $uidExsist["usersId"];
         $_SESSION["userUid"] = $uidExsist["userUid"];
-        header("location: index.php");
+        header("location: ../../../index.php");
 
     }
 }

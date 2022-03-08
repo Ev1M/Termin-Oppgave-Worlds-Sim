@@ -2,19 +2,24 @@
 
 if (isset($_POST["submit"])) {
 
-    $username = $_POST["Uid"];
+    $Uid = $_POST["Uid"];
     $pwd = $_POST["Pwd"];
 
+    echo "nice";
 
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
-    if (emptyInputLogin($username, $pwd) !== false) {
+    if (emptyInputLogin($Uid, $pwd) !== false) {
         header("location: ../login.php?error=emptyInput");
         exit();
+    }else if ($checkPwd === false) {
+        header("location: ../login.php?error=passordFeil");
+        exit();
     }
-
-    loginUser($conn, $username, $pwd);
+    
+    loginUser($conn, $Uid, $pwd);
+    
 
 }else {
     header("location: ../login.php?error=none");

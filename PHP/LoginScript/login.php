@@ -19,12 +19,19 @@
 
         
 <div class="Login-Form">
+<?php
+if (isset($_GET["error"])) {
+    if ($_GET["error"] == "wrongLogin") {
+        echo "<p class='error'> Not working! </p>";
+    }
+}
+?>
 
-<form action="Includes/Login.inc.php" method="post">
+<form action="Includes/Login.inc.php" method="post" class="input">
 
 <input type="text" name="Uid" placeholder="Username/E-mail..."><br>
 <input type="password" name="Pwd" placeholder="Password..."><br>
-<button type="submit" name="button"> Login </button>
+<button type="submit" name="submit"> Login </button>
 </div>
 </div>
 
