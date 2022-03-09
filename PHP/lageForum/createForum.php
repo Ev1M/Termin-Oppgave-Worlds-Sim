@@ -24,7 +24,7 @@
   </div>
 
   <div class="Input">
-    <form class="skriv" method="post" action="../PHP/lageForum/registrert.php" class="form">
+    <form class="skriv" method="post" action="../lageForum/registrert.php" class="form">
       <input placeholder="Title" type="text" name="Title"><br>
       <textarea  style="resize: none;" placeholder="Text" class="textplass" type="text" name="Text"></textarea><br>
       <?php

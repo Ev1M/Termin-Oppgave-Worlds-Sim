@@ -14,7 +14,7 @@
        include '../menu.php';
         ?>
         <div class="Logo">
-            <h1> Le Teaser!! </h1>
+            <h1> Le Teaser! </h1>
         </div>
 </body>
 
@@ -31,7 +31,9 @@
         if ($queryResult > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
               echo "<div class='Forum-box'>
+              <h1>".$row['f_title']."</h1>
               <h3>".$row['f_text']."</h3>
+              <p> Published by: ".$row['f_authour']."</p>
               </div>";
             };
         };

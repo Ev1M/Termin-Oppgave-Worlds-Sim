@@ -67,7 +67,10 @@ body {
     margin: 10px;
     width: 200px;
     height: 80px;
+}
 
+p {
+  margin: 20px;
 }
   .Input { grid-area: Input; }
   .Rules { grid-area: Rules; }

@@ -64,16 +64,17 @@ form {
   }
   
 
+  input {
+    padding: 12px;
+    margin: 20px;
+  }
 
     .input {
         grid-area: Input;
-        font-size: 25px;;
-        padding: 50px;
     }
 
     .button {
       grid-area: button;
-      font-size: 15px;
     }
 
 
