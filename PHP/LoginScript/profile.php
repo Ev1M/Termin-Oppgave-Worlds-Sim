@@ -5,7 +5,7 @@
 ?>
 
 <head>
-<link rel="stylesheet" href="../../css/stylesSignUpLogIn.css">
+<link rel="stylesheet" href="../../css/stylesProfile.css">
 </head>
 
 <body>
@@ -30,9 +30,13 @@
   </div>
   
   <div class="Forum"></div>
+
+<div class="Menu">
 <?php
        include '../menu.php';
         ?>
+</div>
+
 
 
 </div>
