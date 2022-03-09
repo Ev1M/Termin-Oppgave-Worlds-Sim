@@ -1,0 +1,54 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 0.9fr 1.1fr;
+    grid-template-rows: 0.7fr 0.3fr 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Logo . Meny"
+      "Navn Head ."
+      ". Forum .";
+  }
+  
+  .Logo { grid-area: Logo; 
+    font-size: 17px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    height: 80px;
+}
+  
+  .Navn { grid-area: Navn; }
+  
+  .Head { grid-area: Head; }
+  
+  .Menu { grid-area: Meny;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+  }
+    
+  a{
+    color: black;
+    padding: 20px;
+  }
+
+    a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  
+  .Forum { grid-area: Forum; }
+  
