@@ -8,13 +8,9 @@
     <link rel="stylesheet" href="../../css/styles.css" >
 </head>
 <body class="grid-main">
-    <div class="container">
-        <div class="Meny">
-          <a href="../../index.php" >Home</a>
-          <a href="PHP/LoginScript/login.php">Login</a>
-          <a href="../../HTML/Contact.html">Contact</a>
-          <a href="HTML/createForum.html">Post Forum! </a>
-        </div>
+<?php
+       include '../menu.php';
+        ?>
         
         <div class="Logo">
             <h1> Le Teaser!! </h1>

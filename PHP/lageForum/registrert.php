@@ -1,4 +1,5 @@
 <?php
+  include '../LoginScript/Includes/dbh.inc.php';
   include '../dbh.php';
   include '../font.php';
 ?>
@@ -20,7 +21,7 @@ date_default_timezone_set('Europe/Stockholm');
 $Title = $_POST["Title"];
 $Text = $_POST["Text"];
 $Date = date('Y-m-d');
-$Author = $_POST["Author"];
+$Author = $_SESSION["userUid"];
 
 $Title = mysqli_real_escape_string($conn, $Title);
 $Text = mysqli_real_escape_string($conn, $Text);

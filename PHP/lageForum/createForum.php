@@ -1,21 +1,21 @@
+<?php
+  include '../font.php';
+  include '../LoginScript/Includes/dbh.inc.php';
+  session_start();
+?>
+
 <html>
 <head>
     <title> Create Forum </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../css/stylesForum.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/stylesForum.css" />
 </head>
 <body>
   
 
 <div class="container">
-  <div class="Meny">
-  <a href="../index.php" >Home</a>
-  <a href="../PHP/LoginScript/login.php">Login</a>
-  <a href="./Contact.html">Contact</a>
-  <a href="./createForum.HTML">Post Forum! </a>
-  </div>
+<?php
+       include '../menu.php';
+        ?>
 
   <div class="Title"> <h1> Create Your own Post!</h1> </div>
 
@@ -27,8 +27,14 @@
     <form class="skriv" method="post" action="../PHP/lageForum/registrert.php" class="form">
       <input placeholder="Title" type="text" name="Title"><br>
       <textarea  style="resize: none;" placeholder="Text" class="textplass" type="text" name="Text"></textarea><br>
-      <input placeholder="Author" type="text" name="Author">
-      <input type="submit">
+      <?php
+      if (isset($_SESSION["userUid"])) {
+            echo "<p>".$_SESSION["userUid"]."</p>";
+            echo "<input type='submit'>";
+          } else {
+            echo "<h3> You have to Login to post! <a href='../PHP/LoginScript/login.php'>(here)</a>";
+          };
+    ?>
      </form>
   </div>
 

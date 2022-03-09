@@ -22,7 +22,7 @@
           }
           ?>
           <a href="HTML/Contact.html">Contact</a>
-          <a href="HTML/createForum.html">Post Forum! </a>
+          <a href="PHP/lageForum/createForum.php">Post Forum! </a>
         </div>
         <div class="ForumListe">
           <div class="Lista">

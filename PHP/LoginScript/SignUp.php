@@ -11,12 +11,9 @@
 <body>
 
 <div class="container">
-    <div class="Meny">
-      <a href="../../index.php" >Home</a>
-      <a href="login.php">Login</a>
-      <a href="../../HTML/Contact.html">Contact</a>
-      <a href="../../HTML/createForum.html">Post Forum! </a>
-        </div>
+<?php
+       include '../menu.php';
+        ?>
 
 
 
