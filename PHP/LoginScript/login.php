@@ -20,6 +20,8 @@
 if (isset($_GET["error"])) {
     if ($_GET["error"] == "wrongLogin") {
         echo "<p class='error'> Not working! </p>";
+    }else if ($_GET["error"] == "passordFeil") {
+      echo "<p class='error'> Wrong password! </p>";
     }
 }
 ?>
