@@ -1,6 +1,6 @@
 .container {  display: grid;
     grid-template-columns: 1fr 0.9fr 1.1fr;
-    grid-template-rows: 0.7fr 0.3fr 2fr;
+    grid-template-rows: auto;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -19,6 +19,14 @@
     margin: 10px;
     width: 200px;
     height: 80px;
+}
+
+
+.Forum-box {
+  grid-area: Forumbox;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(197, 197, 197, 0.527);
 }
   
   .Navn { grid-area: Navn; }

@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="../../css/styles.css" >
 </head>
 <body class="grid-main">
+  <div class="container">
 <?php
        include '../menu.php';
         ?>
         
         <div class="Logo">
-            <h1> Le Teaser!! </h1>
+            <h1> Le Teaser </h1>
         </div>
         
         <div class="Generelt-Forum">
@@ -36,7 +37,7 @@
                    </div></a>";
                     }   
                 }else {
-                    echo "<h2>Empty:(</h2>";
+                    echo "<h2>No results here.</h2>";
                     }
             };
             ?>
@@ -51,7 +52,7 @@
           <div class="plassen">
           <form action="./SearchPage.php" method="POST">
             <input type="search" alt="Søk etter din favoritt te!" id="SearchOfThaTea">
-            <button> search </button>
+            <button> Search </button>
             </form>
         </div>
       </div>
