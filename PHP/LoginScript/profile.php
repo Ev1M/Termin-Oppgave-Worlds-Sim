@@ -33,7 +33,7 @@ if ($queryResult > 0) {
     <h3>'.$row["f_authour"].'</h3>
     </div></a>';
     
-  
+
   }
   }
   };

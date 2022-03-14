@@ -16,6 +16,10 @@
     margin: 20px;
   }
 
+  .Delete {
+    position: relative;
+    left: 150px;
+  }
 
 a{
   color: black;

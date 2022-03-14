@@ -33,8 +33,13 @@
               echo "<div class='Forum-box'>
               <h1>".$row['f_title']."</h1>
               <h3>".$row['f_text']."</h3>
-              <p> Published by: ".$row['f_authour']."</p>
-              </div>";
+              <p> Published by: ".$row['f_authour']."</p>";
+              if ($row['f_authour'] == $_SESSION["userUid"]){
+                echo "<a class='Delete'> Delete </a>";
+                }else {
+                echo "";
+                };
+              "</div>";
             };
         };
     ?>
