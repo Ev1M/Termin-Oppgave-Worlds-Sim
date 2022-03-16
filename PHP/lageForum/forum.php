@@ -35,7 +35,7 @@
               <h3>".$row['f_text']."</h3>
               <p> Published by: ".$row['f_authour']."</p>";
               if ($row['f_authour'] == $_SESSION["userUid"]){
-                echo "<a class='Delete'> Delete </a>";
+                echo "<a class='Delete' href='delete.php?f_id=". $row['f_id'] ."'> Delete </a>";
                 }else {
                 echo "";
                 };
