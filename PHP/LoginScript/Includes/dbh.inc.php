@@ -1,8 +1,8 @@
 <?php
-  $server = "localhost";
+  $server = "10.2.2.240";
   $username = "root";
   $password = "";
-  $dbname = "dblogin";
+  $dbname = "DBTerminTea";
 
   $conn = mysqli_connect($server, $username, $password, $dbname);
 ?>
