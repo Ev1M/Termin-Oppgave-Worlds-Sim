@@ -1,4 +1,5 @@
 <?php
+//includes the database and font
   include '../LoginScript/Includes/dbh.inc.php';
   include '../dbh.php';
   include '../font.php';

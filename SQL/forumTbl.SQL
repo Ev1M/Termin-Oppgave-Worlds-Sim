@@ -1,4 +1,4 @@
-Create database dbphpsearch
+Create database DBTerminTea
 
 create table forum (
     f_id int(11) AUTO_INCREMENT PRIMARY KEY ,

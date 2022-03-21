@@ -1,4 +1,6 @@
 <?php
+
+//kommer ikke til å trenge dette senere
   $server = "10.2.2.240";
   $username = "root";
   $password = "";

@@ -1,7 +1,10 @@
+<!-- This file is only used on specific pages beacuse of the intricate directory system  -->
+
 
 <div class="Meny">
   <a href="../../index.php" >Home</a>
   <?php
+  //Display Login and Sign Up if not logged in, ekse display Profile and Logout.
           if (isset($_SESSION["userUid"])) {
             echo "<a href='../LoginScript/profile.php'>Profile</a>";
             echo "<a href='../LoginScript/Includes/logout.inc.php'>Log out</a>";

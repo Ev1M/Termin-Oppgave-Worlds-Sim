@@ -1,4 +1,5 @@
 <?php
+//includes the font
   include '../font.php';
 ?>
 
@@ -10,6 +11,7 @@
 
 <div class="container">
 <?php
+//includes the menu
        include '../menu.php';
         ?>
 
@@ -17,6 +19,7 @@
         
 <div class="Login-Form">
 <?php
+//Creates all the error messages for when loging in fails.
 if (isset($_GET["error"])) {
     if ($_GET["error"] == "wrongLogin") {
         echo "<p class='error'> Not working! </p>";
@@ -26,6 +29,8 @@ if (isset($_GET["error"])) {
 }
 ?>
 
+
+<!-- All the  input fields -->
 <form action="Includes/Login.inc.php" method="post" class="input">
 
 <input type="text" name="Uid" placeholder="Username/E-mail..."><br>

@@ -1,4 +1,4 @@
-Create database dblogin
+Create database DBTerminTea
 
 create table users (
     userId int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,

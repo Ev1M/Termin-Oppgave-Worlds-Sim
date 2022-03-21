@@ -1,4 +1,6 @@
 <?php
+
+//Checks if the input fields are empty or not
 function emptyInputSingUp($name, $email, $Uid, $Pwd, $PwdRepeat){
     $result;
     if (empty($name) || empty($email) || empty($Uid) || empty($Pwd) || empty($PwdRepeat)){
@@ -10,6 +12,7 @@ function emptyInputSingUp($name, $email, $Uid, $Pwd, $PwdRepeat){
     return $result;
 }
 
+//Checks for what characters are being used in the username
 function InvalidUid($username){
     $result;
     if (!preg_match("/^[a-zA-Z0-9]*$/", $username )) {
@@ -22,6 +25,7 @@ function InvalidUid($username){
     return $result;
 }
 
+//Checks if the email is in the correct format
 function InvalidEmail($email){
     $result;
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -34,6 +38,7 @@ function InvalidEmail($email){
     return $result;
 }
 
+//Checks if the passwords match
 function PwdMatch($Pwd, $PwdRepeat){
     $result;
     if ($Pwd !== $PwdRepeat) {
@@ -46,6 +51,7 @@ function PwdMatch($Pwd, $PwdRepeat){
     return $result;
 }
 
+//Checks if the username or email is already in use.
 function uidExsist($conn, $username, $email){
  $sql = "SELECT * FROM users WHERE userUid = ? OR usersEmail = ?;";
  $stmt = mysqli_stmt_init($conn);
@@ -72,6 +78,7 @@ mysqli_stmt_close($stmt);
 
 }
 
+//Lager brukeren
 function createUser($conn, $name, $email, $Uid, $Pwd, $PwdRepeat){
     $sql = "INSERT INTO users(usersName, usersEmail, userUid, usersPwd) VALUES (?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
@@ -90,7 +97,7 @@ function createUser($conn, $name, $email, $Uid, $Pwd, $PwdRepeat){
    
    }
    
-
+   //Checks if the input fields are empty or not
    function emptyInputLogin($Uid, $pwd){
     $result;
     if (empty($Uid) || empty($pwd)){
@@ -102,6 +109,7 @@ function createUser($conn, $name, $email, $Uid, $Pwd, $PwdRepeat){
     return $result;
 }
 
+//Logs the user in
 function loginUser($conn, $Uid, $pwd) {
     $uidExsist = uidExsist($conn, $Uid, $Uid);
 

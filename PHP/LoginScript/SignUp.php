@@ -1,4 +1,5 @@
 <?php
+//includes the font
   include '../font.php';
 ?>
 
@@ -11,7 +12,8 @@
 <body>
 
 <div class="container">
-<?php
+    <?php
+    //includes the menu
        include '../menu.php';
         ?>
 
@@ -20,7 +22,7 @@
 <div class="Login-Form">
 
 <?php 
-
+    //Creates all the error messages for when signing up fails.
 if (isset($_GET["error"])) {
     if ($_GET["error"] == "emptyInput") {
         echo "<p class='error'> You have to fill in all the fields! </p>";

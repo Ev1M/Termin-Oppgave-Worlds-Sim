@@ -22,12 +22,13 @@
   <div class="Logo">
   <h1> Le Teaser! </h1>
   </div>
-
+  <!-- Input fields for creating the post -->
   <div class="Input">
     <form class="skriv" method="post" action="../lageForum/registrert.php" class="form">
       <input placeholder="Title" type="text" name="Title"><br>
       <textarea  style="resize: none;" placeholder="Text" class="textplass" type="text" name="Text"></textarea><br>
       <?php
+      //Makes it so that you have to log in to post.
       if (isset($_SESSION["userUid"])) {
             echo "<p>".$_SESSION["userUid"]."</p>";
             echo "<input type='submit'>";
@@ -38,6 +39,7 @@
      </form>
   </div>
 
+  <!-- The rules on the  rigth side of the input fields -->
   <div class="Rules">
     <h3>Rules</h3>
     <ul>
