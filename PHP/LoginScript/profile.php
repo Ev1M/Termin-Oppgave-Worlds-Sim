@@ -1,6 +1,5 @@
 <?php
 //includes database and font
- include './Includes/dbh.inc.php';
  include '../dbh.php';
  include '../font.php';
 ?>

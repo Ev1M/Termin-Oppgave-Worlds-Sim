@@ -2,7 +2,6 @@
 
 //includes the database and font
 include '../font.php';
-include '../LoginScript/Includes/dbh.inc.php';
 include '../dbh.php';
 
 

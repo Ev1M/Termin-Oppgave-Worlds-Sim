@@ -1,7 +1,6 @@
 <?php
   include '../font.php';
-  include '../LoginScript/Includes/dbh.inc.php';
-  session_start();
+  include '../dbh.php';
 ?>
 
 <html>

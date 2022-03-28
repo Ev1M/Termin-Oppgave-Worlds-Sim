@@ -7,7 +7,7 @@ if (isset($_POST["submit"])) {
     $pwd = $_POST["Pwd"];
 
     //includes the database and the functions for the errors
-    require_once 'dbh.inc.php';
+    require_once '../../dbh.php';
     require_once 'functions.inc.php';
 
     //Responds to the error if the input fields are empty
