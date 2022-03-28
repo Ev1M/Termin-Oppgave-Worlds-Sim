@@ -26,6 +26,9 @@
 $SQL = "SELECT * FROM forum";
 $result = mysqli_query($conn, $SQL);
 $queryResult = mysqli_num_rows($result);
+echo $result;
+var_dump($result);
+die();
 //Checks if there is any information to be written out
 if ($queryResult > 0) {
   while ($row = mysqli_fetch_assoc($result)) {
