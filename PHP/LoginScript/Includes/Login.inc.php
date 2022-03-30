@@ -25,6 +25,7 @@ if (isset($_POST["submit"])) {
     
 
 }else {
+    //sends user back to loginpage without any errors
     header("location: ../login.php?error=none");
     exit();
 }
