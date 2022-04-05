@@ -46,7 +46,7 @@
       <li>Anything illegal will be banned!</li>
       <li>Frienldy rivalry only! Hating will be punished!</li>
     </ul>
-    <h3>The rules will be withheld by the administrator</h3>
+    <h3>The rules will be withheld by the administrator!</h3>
   </div>
 </div>
 

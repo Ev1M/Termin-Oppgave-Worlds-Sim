@@ -13,6 +13,6 @@
             echo "<a href='../LoginScript/SignUp.php'>Signup</a>";
           }
           ?>
-  <a href="../../HTML/Contact.html">Contact</a>
+  <a href="../../HTML/Help.html">Help</a>
   <a href="../lageForum/createForum.php">Post Forum! </a>
   </div>

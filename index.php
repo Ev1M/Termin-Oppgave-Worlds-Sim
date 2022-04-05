@@ -26,14 +26,14 @@
             echo "<a href='PHP/LoginScript/SignUp.php'>Signup</a>";
           }
           ?>
-          <a href="HTML/Contact.html">Contact</a>
+          <a href="HTML/Help.html">Help</a>
           <a href="PHP/lageForum/createForum.php">Post Forum! </a>
         </div>
         <div class="ForumListe">
           <div class="Lista">
             <!-- Here is the beige list on the rigth of all the forum posts -->
             <ul style="list-style-type:none;">
-                <li>Nype-te <br><a class="kommentar">Nype-te er favoritt til admin</a> </li>
+                <li>Nype-te <br><a href="PHP/lageForum/forum.php?title=Nype%20Te&date=2022-04-05" class="kommentar">Nype-te er favoritt til admin</a> </li>
                 <li>GreenTea <br><a class="kommentar">Vet ikke</a></li>
                 <li>EarlGreyTea <br><a class="kommentar">Vet ikke</a></li>
                 <li>English breakfast <br><a class="kommentar">Vet ikke</a></li>
@@ -47,7 +47,7 @@
         <div class="Generelt-Forum">
           <?php
           //Retrives the informasion  
-          $SQL = "SELECT * FROM forum";
+          $SQL = "SELECT * FROM forum ORDER BY f_date DESC";
           $result = mysqli_query($conn, $SQL);
           $queryResult = mysqli_num_rows($result);
           //Checks if there is any information to be written out

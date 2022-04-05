@@ -1,0 +1,85 @@
+.container {  display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 1.2fr 2.2fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Logo Title Meny"
+      ". Artikler ."
+      ". Footer .";
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .Artikler {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Art1 Art2"
+      "Art3 Art4";
+    grid-area: Artikler;
+  }
+  
+  .Art1 { grid-area: Art1; 
+  background-color: aqua;
+  }
+  
+  .Art2 { grid-area: Art2; 
+    background-color: aqua;}
+  
+  
+  .Art3 { grid-area: Art3; 
+    background-color: aqua;}
+  
+  .Art4 { grid-area: Art4; 
+    background-color: aqua;}
+  
+  
+  .Title { grid-area: Title;
+    text-align: center;
+    margin: 50px;
+}
+  
+  .Footer { grid-area: Footer; }
+  
+  .Logo { grid-area: Logo; 
+    font-size: 17px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    height: 80px;
+}
+  
+.Meny { grid-area: Meny;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+  }
+    
+  a{
+    color: black;
+    padding: 20px;
+  }
+
+    a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  
