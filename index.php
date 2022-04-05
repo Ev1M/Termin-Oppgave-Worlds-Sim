@@ -47,7 +47,7 @@
         <div class="Generelt-Forum">
           <?php
           //Retrives the informasion  
-          $SQL = "SELECT * FROM forum ORDER BY f_date DESC";
+          $SQL = "SELECT * FROM forum ORDER BY f_id DESC";
           $result = mysqli_query($conn, $SQL);
           $queryResult = mysqli_num_rows($result);
           //Checks if there is any information to be written out
