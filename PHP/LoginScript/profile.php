@@ -5,7 +5,7 @@
 ?>
 
 <head>
-<title> <?php echo "".$_SESSION["userUid"]."s Profile" ?>
+<title> <?php echo "".$_SESSION["userUid"]."'s Profile" ?></title>
 <link rel="stylesheet" href="../../css/stylesProfile.css">
 </head>
 

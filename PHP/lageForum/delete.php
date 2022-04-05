@@ -35,7 +35,7 @@ if(isset($_POST["f_id"]) && !empty($_POST["f_id"])){
         <input type="Hidden" name="f_id" value="<?php echo trim($_GET["f_id"]); ?>" >
         <p>Are you sure you want to delete your post?</p>
         <p>
-            <input type="submit" name="submit">
-             <a href="../LoginScript/profile.php">No</a>
+            <input type="submit" name="Yes">
+            <a href="../LoginScript/profile.php">No</a>
          </p>
 </form>
