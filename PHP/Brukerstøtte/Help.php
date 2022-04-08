@@ -15,7 +15,7 @@
         <?php 
         include '../dbh.php';
      
-          $SQL = "SELECT * FROM help LIMIT 1";
+          $SQL = "SELECT * FROM help LIMIT 1 h_id";
           $result = mysqli_query($conn, $SQL);
           $queryResult = mysqli_num_rows($result);
           //Checks if there is any information to be written out
@@ -31,7 +31,7 @@
           };?></div>
       <div class="Art2">
       <?php 
-          $SQL = "SELECT * FROM help LIMIT 1";
+          $SQL = "SELECT * FROM help LIMIT 1 h_date";
           $result = mysqli_query($conn, $SQL);
           $queryResult = mysqli_num_rows($result);
           //Checks if there is any information to be written out
@@ -48,7 +48,7 @@
       </div>
       <div class="Art3">
       <?php 
-          $SQL = "SELECT * FROM help LIMIT 1";
+          $SQL = "SELECT * FROM help LIMIT 1 ORDER BY h_title";
           $result = mysqli_query($conn, $SQL);
           $queryResult = mysqli_num_rows($result);
           //Checks if there is any information to be written out
@@ -65,7 +65,7 @@
       </div>
       <div class="Art4">
       <?php 
-          $SQL = "SELECT * FROM help LIMIT 1";
+          $SQL = "SELECT * FROM help LIMIT 1 ORDER BY h_authour";
           $result = mysqli_query($conn, $SQL);
           $queryResult = mysqli_num_rows($result);
           //Checks if there is any information to be written out
