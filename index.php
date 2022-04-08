@@ -26,7 +26,7 @@
             echo "<a href='PHP/LoginScript/SignUp.php'>Signup</a>";
           }
           ?>
-          <a href="HTML/Help.html">Help</a>
+          <a href="PHP/brukerstøtte/Help.php">Help</a>
           <a href="PHP/lageForum/createForum.php">Post Forum! </a>
         </div>
         <div class="ForumListe">
@@ -73,8 +73,6 @@
             </form>   
         </div>
         </div>
-    <script src="js/script.js">
-    </script>
 </body>
 
 </html>

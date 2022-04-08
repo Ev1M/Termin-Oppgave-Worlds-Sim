@@ -108,7 +108,7 @@ function createUser($conn, $name, $email, $Uid, $Pwd, $PwdRepeat){
 }
 
 //Logs the user in
-function loginUser($conn, $Uid, $pwd) {
+function loginUser($conn, $Uid, $pwd, $email) {
     $uidExsist = uidExsist($conn, $Uid, $Uid);
 
     if ($uidExsist === false) {
@@ -126,6 +126,7 @@ function loginUser($conn, $Uid, $pwd) {
         session_start();
         $_SESSION["userId"] = $uidExsist["usersId"];
         $_SESSION["userUid"] = $uidExsist["userUid"];
+        $_SESSION["usersEmail"] = $uidExsist["usersEmail"];
         header("location: ../../../index.php");
 
     }

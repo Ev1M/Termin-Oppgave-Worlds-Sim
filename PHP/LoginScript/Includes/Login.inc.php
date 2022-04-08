@@ -5,6 +5,7 @@ if (isset($_POST["submit"])) {
     //collects the info sent from the Sign Up submit form
     $Uid = $_POST["Uid"];
     $pwd = $_POST["Pwd"];
+    $email = $_POST["E-mail"];
 
     //includes the database and the functions for the errors
     require_once '../../dbh.php';
@@ -21,7 +22,7 @@ if (isset($_POST["submit"])) {
     }
     
     //logs the user in
-    loginUser($conn, $Uid, $pwd);
+    loginUser($conn, $Uid, $pwd, $email);
     
 
 }else {

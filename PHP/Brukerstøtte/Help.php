@@ -15,7 +15,7 @@
         <?php 
         include '../dbh.php';
      
-          $SQL = "SELECT * FROM help ORDER BY h_date DESC LIMIT 1";
+          $SQL = "SELECT * FROM help LIMIT 1";
           $result = mysqli_query($conn, $SQL);
           $queryResult = mysqli_num_rows($result);
           //Checks if there is any information to be written out
@@ -31,7 +31,7 @@
           };?></div>
       <div class="Art2">
       <?php 
-          $SQL = "SELECT * FROM help ORDER BY h_date DESC LIMIT 1";
+          $SQL = "SELECT * FROM help LIMIT 1";
           $result = mysqli_query($conn, $SQL);
           $queryResult = mysqli_num_rows($result);
           //Checks if there is any information to be written out
@@ -48,7 +48,7 @@
       </div>
       <div class="Art3">
       <?php 
-          $SQL = "SELECT * FROM help ORDER BY h_date DESC LIMIT 1";
+          $SQL = "SELECT * FROM help LIMIT 1";
           $result = mysqli_query($conn, $SQL);
           $queryResult = mysqli_num_rows($result);
           //Checks if there is any information to be written out
@@ -65,7 +65,7 @@
       </div>
       <div class="Art4">
       <?php 
-          $SQL = "SELECT * FROM help ORDER BY h_date DESC LIMIT 1";
+          $SQL = "SELECT * FROM help LIMIT 1";
           $result = mysqli_query($conn, $SQL);
           $queryResult = mysqli_num_rows($result);
           //Checks if there is any information to be written out
@@ -87,7 +87,7 @@
 
   <div class="Meny">
   <a href="../index.php" >Home</a>
-  <a href="./Contact.html">Contact</a>
+  <a href="./Contact.php">Contact</a>
   <a href="../PHP/lageForum/createForum.php">Post Forum! </a>
   </div>
 

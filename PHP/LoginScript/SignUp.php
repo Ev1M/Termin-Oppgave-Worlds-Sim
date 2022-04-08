@@ -39,6 +39,7 @@ if (isset($_GET["error"])) {
 
 ?>
 
+<!-- All the  input fields -->
 <form action="Includes/SignUp.inc.php" method="post" class="input">
 
 <input type="text" name="name" placeholder="Full Name..."><br>
