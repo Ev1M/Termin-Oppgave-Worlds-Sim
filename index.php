@@ -27,7 +27,7 @@
           }
           ?>
           <a href="PHP/brukerstøtte/Help.php">Help</a>
-          <a href="PHP/lageForum/createForum.php">Post Forum! </a>
+          <a href="PHP/lageForum/createForum.php">Create Post!</a>
         </div>
         <div class="ForumListe">
           <div class="Lista">

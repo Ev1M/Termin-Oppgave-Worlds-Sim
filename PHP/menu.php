@@ -14,5 +14,5 @@
           }
           ?>
   <a href="../../HTML/Help.html">Help</a>
-  <a href="../lageForum/createForum.php">Post Forum! </a>
+  <a href="../lageForum/createForum.php">Create Post! </a>
   </div>

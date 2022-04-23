@@ -1,6 +1,24 @@
 1. How do i create a post?
-ans: To create a post, you have to click the "Create Post" button in the top rigth corner. The button will take you to a form in which you can write your post and submit it to the website.
+ans: To create a post, you have to click the "Create Post" button in the top rigth corner. The button will take you to a form in which you can write your post and submit it to the website after you log in.
 
 2. How do i log in?
 ans: If you want to login to the website you will have to first create a user using the "Sign Up" feature in the top rigth corner next to "Login". When you have created your user, you have to click the "Login" button refferd to earlier.
 You will be taken to the login form, where you have to use your username and password to acsess your user.
+
+3. Are there any rules for posting?
+ans: Yes, there is a list of rules for posting to the website on the Create Post site. 
+
+4. How can i contact an administrator?
+ans: The easiest way to contact an administrator would be to use the "Contact" button i the top rigth corner. There you can find email which you can send a ticket to, it will be answerd within two or three working days.
+
+5. How do i delete a post?
+ans: You can delete a post by finding it, clicking on it and clicking the "Delete" button at the bottom of the post. Then you have to press the button "Yes", if you truly are sure of the fact that you want to delete the post.
+
+6. Is there any limit to how many posts i can make?
+ans: No, you are free to post as much as you like.
+
+7. Where does the name "Le teaser" originate from?
+ans: My head, the admin made it up, with help from friends. There is no teasing involved, only tea.
+
+8. Is Le Teaser avaliable in other languages?
+ans: No, there are no translations for the website yet, unless you use Google Translates automatic function.
