@@ -1,0 +1,6 @@
+1. How do i create a post?
+ans: To create a post, you have to click the "Create Post" button in the top rigth corner. The button will take you to a form in which you can write your post and submit it to the website.
+
+2. How do i log in?
+ans: If you want to login to the website you will have to first create a user using the "Sign Up" feature in the top rigth corner next to "Login". When you have created your user, you have to click the "Login" button refferd to earlier.
+You will be taken to the login form, where you have to use your username and password to acsess your user.
