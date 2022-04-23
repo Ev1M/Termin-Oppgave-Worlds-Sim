@@ -90,7 +90,7 @@ function createUser($conn, $name, $email, $Uid, $Pwd, $PwdRepeat){
     mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $Uid, $hashedPwd);
     mysqli_stmt_execute($stmt);   
     mysqli_stmt_close($stmt);
-    header("location: ../SignUp.php?error=none");
+    header("location: ../login.php?error=none");
     exit();
    
    }

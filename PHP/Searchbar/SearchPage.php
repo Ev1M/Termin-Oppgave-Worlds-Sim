@@ -29,18 +29,15 @@
                 //Makes a result variable and the amount of rows within the result.
                 $result = mysqli_query($conn, $sql); 
                 $queryResult = mysqli_num_rows($result);
-            
-                
               //Checks the result
-              if ($queryResult > 0) { 
+              if ($queryResult > 0) {
                   while ($row = mysqli_fetch_assoc($result)) {
                     //Writes out the information found after searching
                     echo "<a href='../lageForum/forum.php?title=".$row['f_title']."&date=".$row['f_date']."'> <div class='Forum-box'>
                     <h3>".$row['f_title']."</h3>
-                    <h3>".$row['f_text']."</h3>
+                    <h3  maxlength='20' >".$row['f_text']."</h3>
                     <h3>".$row['f_date']."</h3>                      
                     <h3>".$row['f_authour']."</h3>
-                    <p>There are ".$queryResult." result(s)!</p>
                    </div></a>";
                     }   
                 }else {

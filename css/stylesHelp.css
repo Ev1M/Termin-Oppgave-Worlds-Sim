@@ -42,6 +42,7 @@
   .Title { grid-area: Title;
     text-align: center;
     margin: 50px;
+    text-decoration: underline;
 }
   
   .Footer { grid-area: Footer; }

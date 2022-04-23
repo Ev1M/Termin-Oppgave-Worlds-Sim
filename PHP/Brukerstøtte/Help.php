@@ -74,7 +74,7 @@
         if ($queryResult > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
             //writes out the information
-            echo "<a href='./PHP/lageForum/forum.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
+            echo "<a href='../../PHP/lageForum/forum.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
               <h3>" . $row['h_title'] . "</h3>
               <h3>" . $row['h_date'] . "</h3>
               <h3>" . $row['h_authour'] . "</h3>
@@ -83,11 +83,12 @@
         }; ?>
       </div>
     </div>
-    <div class="Title">
-      <h1>You Stupid! Naw a Nawt. Whats 9+10? 21! </h1>
-    </div>
-    <div class="Footer"></div>
 
+      <h1 class="Title" > Frequently Asked Questions   </h1>
+
+
+
+    <div class="Footer"></div>
 
     <div class="Meny">
       <a href="../index.php">Home</a>
