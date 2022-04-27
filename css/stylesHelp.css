@@ -38,6 +38,7 @@
   .Art4 { grid-area: Art4; 
     background-color: aqua;}
   
+.Search {grid-area: Search;}
   
   .Title { grid-area: Title;
     text-align: center;

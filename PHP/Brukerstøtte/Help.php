@@ -12,8 +12,13 @@
 
 
   <div class="container">
+
+  <div class="Search"> </div>
+
+
     <div class="Artikler">
       <div class="Art1">
+
         <?php
         include '../dbh.php';
 
@@ -91,7 +96,7 @@
     <div class="Footer"></div>
 
     <div class="Meny">
-      <a href="../index.php">Home</a>
+      <a href="../../index.php">Home</a>
       <a href="./Contact.php">Contact</a>
       <a href="../PHP/lageForum/createForum.php">Post Forum! </a>
     </div>
