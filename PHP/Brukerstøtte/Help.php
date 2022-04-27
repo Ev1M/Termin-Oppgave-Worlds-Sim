@@ -13,7 +13,15 @@
 
   <div class="container">
 
-  <div class="Search"> </div>
+  <div class="Search">
+
+            <!-- The searchbar -->
+          <form autocomplete="off" action="./helpSearchPage.php" method="POST">
+            <input name="search" type="search" alt="Søk etter din favoritt te!" class="leBar">
+            <button class="knapp" name="submit-search"> Search </button>
+            </form>   
+  
+</div>
 
 
     <div class="Artikler">
@@ -22,14 +30,14 @@
         <?php
         include '../dbh.php';
 
-        $SQL = "SELECT * FROM help ORDER BY h_id LIMIT 1";
+        $SQL = "SELECT * FROM help ORDER BY h_id DESC LIMIT 1";
         $result = mysqli_query($conn, $SQL);
         $queryResult = mysqli_num_rows($result);
         //Checks if there is any information to be written out
         if ($queryResult > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
             //writes out the information
-            echo "<a href='./PHP/lageForum/forum.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
+            echo "<a href='./FAQ.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
               <h3>" . $row['h_title'] . "</h3>
               <h3>" . $row['h_date'] . "</h3>
               <h3>" . $row['h_authour'] . "</h3>
@@ -45,9 +53,8 @@
         if ($queryResult > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
             //writes out the information
-            echo "<a href='./PHP/lageForum/forum.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
+            echo "<a href='./FAQ.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
               <h3>" . $row['h_title'] . "</h3>
-              <h3>" . $row['h_date'] . "</h3>
               <h3>" . $row['h_authour'] . "</h3>
               </div></a>";
           };
@@ -55,14 +62,14 @@
       </div>
       <div class="Art3">
         <?php
-        $SQL = "SELECT * FROM help ORDER BY h_title LIMIT 1";
+        $SQL = "SELECT * FROM help ORDER BY h_title DESC LIMIT 1";
         $result = mysqli_query($conn, $SQL);
         $queryResult = mysqli_num_rows($result);
         //Checks if there is any information to be written out
         if ($queryResult > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
             //writes out the information
-            echo "<a href='./PHP/lageForum/forum.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
+            echo "<a href='./FAQ.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
               <h3>" . $row['h_title'] . "</h3>
               <h3>" . $row['h_date'] . "</h3>
               <h3>" . $row['h_authour'] . "</h3>
@@ -72,14 +79,14 @@
       </div>
       <div class="Art4">
         <?php
-        $SQL = "SELECT * FROM help ORDER BY h_authour LIMIT 1";
+        $SQL = "SELECT * FROM help ORDER BY h_authour DESC LIMIT 1";
         $result = mysqli_query($conn, $SQL);
         $queryResult = mysqli_num_rows($result);
         //Checks if there is any information to be written out
         if ($queryResult > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
             //writes out the information
-            echo "<a href='../../PHP/lageForum/forum.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
+            echo "<a href='./FAQ.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
               <h3>" . $row['h_title'] . "</h3>
               <h3>" . $row['h_date'] . "</h3>
               <h3>" . $row['h_authour'] . "</h3>
@@ -93,7 +100,6 @@
 
 
 
-    <div class="Footer"></div>
 
     <div class="Meny">
       <a href="../../index.php">Home</a>

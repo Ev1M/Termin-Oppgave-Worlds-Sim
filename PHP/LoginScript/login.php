@@ -31,7 +31,7 @@ if (isset($_GET["error"])) {
 
 
 <!-- All the  input fields -->
-<form action="Includes/Login.inc.php" method="post" class="input">
+<form autocomplete="off" action="Includes/Login.inc.php" method="post" class="input">
 
 <input type="text" name="Uid" placeholder="Username/E-mail..."><br>
 <input type="password" name="Pwd" placeholder="Password..."><br>

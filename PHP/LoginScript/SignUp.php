@@ -40,7 +40,7 @@ if (isset($_GET["error"])) {
 ?>
 
 <!-- All the  input fields -->
-<form action="Includes/SignUp.inc.php" method="post" class="input">
+<form autocomplete="off" action="Includes/SignUp.inc.php" method="post" class="input">
 
 <input type="text" name="name" placeholder="Full Name..."><br>
 <input type="text" name="E-mail" placeholder="E-mail adress..."><br>

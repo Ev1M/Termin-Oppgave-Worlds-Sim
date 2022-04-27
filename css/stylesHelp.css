@@ -1,12 +1,12 @@
 .container {  display: grid;
-    grid-template-columns: 0.8fr 1.2fr 1fr;
-    grid-template-rows: 1.2fr 2.2fr 1fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
     gap: 30px 30px;
     grid-auto-flow: row;
     grid-template-areas:
       "Logo Title Meny"
+      ". Search ."
       ". Artikler ."
-      ". Footer .";
   }
   
   body {
@@ -38,7 +38,14 @@
   .Art4 { grid-area: Art4; 
     background-color: aqua;}
   
-.Search {grid-area: Search;}
+.Search {grid-area: Search;
+  text-align: center;
+}
+
+.leBar {
+  font-size: 25px;
+  width: 100%;
+}
   
   .Title { grid-area: Title;
     text-align: center;
@@ -46,7 +53,6 @@
     text-decoration: underline;
 }
   
-  .Footer { grid-area: Footer; }
   
   .Logo { grid-area: Logo; 
     font-size: 17px;
@@ -67,6 +73,10 @@
   a{
     color: black;
     padding: 20px;
+  }
+
+  h3 {
+    margin: 20px;
   }
 
     a:link {
