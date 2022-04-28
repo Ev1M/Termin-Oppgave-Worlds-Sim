@@ -1,17 +1,17 @@
 .container {   display: grid; 
   grid-template-columns: 1fr 0.9fr 1.1fr; 
   grid-template-rows: 0.3fr 1.9fr; 
-  gap: 0px 0px; 
+  gap: 50px 50px; 
   grid-template-areas:
     ". . Meny"
-    ". Login-Form .";
+    ". Login-Form Disclaimer";
 }
 
 body {
   font-family: 'Raleway', sans-serif;
 }
 
-
+.Disclaimer {grid-area: Disclaimer;}
 
 .Login-Form {
   display: grid; 

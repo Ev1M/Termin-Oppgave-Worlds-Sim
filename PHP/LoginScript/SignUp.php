@@ -51,7 +51,20 @@ if (isset($_GET["error"])) {
 
 </form>
 
+
 </div>
+
+<div class="Disclaimer">
+    <h3>What will we do with your information?</h3>
+    <ul>
+      <li>Your password will be hashed and remain hashed within the database.</li>
+      <li>Your email is stricly for when you want to contact us via mail</li>
+      <li>Your name is striclty for aquintence purpose, your username is what's displayed when you post.</li>
+    </ul>
+    <h3>We dont sell the information! Pinky swear :)</h3>
+  </div>
+
+
 </div>
 </body>
 </html>

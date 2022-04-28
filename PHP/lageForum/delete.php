@@ -1,3 +1,22 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/stylesSignUpLogIn.css">
+    <title>Delete</title>
+</head>
+<body>
+<div class="container">
+
+<?php
+//includes the menu
+       include '../menu.php';
+        ?>
+
 <?php
 
 //includes the database and font
@@ -30,12 +49,20 @@ if(isset($_POST["f_id"]) && !empty($_POST["f_id"])){
 }
 
 ?>
+
+
+
 <!-- Asks one last time wether you want to delete the post or not -->
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+<div class="Login-Form">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="input">
         <input type="Hidden" name="f_id" value="<?php echo trim($_GET["f_id"]); ?>" >
         <p>Are you sure you want to delete your post?</p>
         <p>
-            <input type="submit" name="Yes">
+            <input type="submit" value="Yes">
             <a href="../LoginScript/profile.php">No</a>
          </p>
 </form>
+</div>
+</div>
+</body>
+</html>
