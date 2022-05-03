@@ -15,9 +15,13 @@
         <div class="Meny">
           <a href="index.php" >Home</a>
           <?php
+
           //This checks if the sessions username is set, and shows the relevant information according to the answer.
           if (isset($_SESSION["userUid"])) {
             //profile and logout page
+            if ( $_SESSION['userUid'] == "Admin"){
+              echo "<a href='PHP/admin.php'>Admin</a>";
+            } 
             echo "<a href='PHP/LoginScript/profile.php'>Profile</a>";
             echo "<a href='PHP/LoginScript/Includes/logout.inc.php'>Log out</a>";
           } else {

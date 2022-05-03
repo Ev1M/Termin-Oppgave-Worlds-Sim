@@ -36,8 +36,6 @@ if ($queryResult > 0) {
     <h3>'.$row["f_date"].'</h3>
     <h3>'.$row["f_authour"].'</h3>
     </div></a>';
-    
-
   }
   }
   };
