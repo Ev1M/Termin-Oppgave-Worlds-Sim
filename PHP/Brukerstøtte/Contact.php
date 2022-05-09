@@ -14,26 +14,31 @@ include '../dbh.php';
     <title>Contact</title>
 </head>
 <body>
+  <div class="container">
+  <?php
+    include '../menu.php';
+    ?>
+
+    <div class="Title"><h1>Send in a ticket</h1></div>
+
+    <div class="Search">
     <form action="contactForm.php" method="POST">
         <?php
          if (isset($_SESSION["usersEmail"])) {
             //profile and logout page
-            echo "<p>Email som vil bli brukt er ".$_SESSION["usersEmail"]."</p>";
-            echo "<input type='text' name='Subject' placeholder='Subject'>";
-            echo "<textarea type='text' name='Message' placeholder='Message'></textarea>";
+            echo "<p>The E-mail that will be used is ".$_SESSION["usersEmail"]."</p>";
+            echo "<input type='text' name='Subject' placeholder='Subject'><br>";
+            echo "<textarea width='150px' height='150px' type='text' name='Message' placeholder='Message'></textarea><br>";
             echo "<button type='submit' name='Submit'> Send Mail </button>";
           } else {
-            echo "<input type='text' name='Email' placeholder='Email...'>";
-            echo "<input type='text' name='Subject' placeholder='Subject'>";
-            echo "<textarea type='text' name='Message' placeholder='Message...'></textarea>";
+            echo "<input type='text' name='Email' placeholder='Email...'><br>";
+            echo "<input type='text' name='Subject' placeholder='Subject'><br>";
+            echo "<textarea type='text' name='Message' placeholder='Message...'></textarea><br>";
             echo "<button type='submit' name='Submit'> Send Mail </button>";
           }
         ?>
     </form>
 
-    <h3> Evmya002@osloskolen.no </h3>
+        </div>
 </body>
 </html>
-<?php
-    include '../menu.php';
-    ?>

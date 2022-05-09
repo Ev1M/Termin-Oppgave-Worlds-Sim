@@ -26,7 +26,7 @@
   <a href="../lageForum/createForum.php">Create Post!</a>
   </div>
   <div class="FAQ">
-       <form class="skriv" method="post" action="../lageForum/registrert.php" class="form">
+       <form class="skriv" method="post" action="./Brukerstøtte/lagFAQ.php" class="form">
       <input placeholder="Title" type="text" name="Title"><br>
       <textarea  style="resize: none;" placeholder="Text" class="textplass" type="text" name="Text"></textarea><br>
       <input type='submit'>

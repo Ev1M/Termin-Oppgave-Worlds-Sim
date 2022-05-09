@@ -1,5 +1,9 @@
 <?php
 
+include '../dbh.php';
+ 
+
+
 date_default_timezone_set('Europe/Stockholm');
 
 $Title = $_POST["Title"];
@@ -10,7 +14,7 @@ $Title = mysqli_real_escape_string($conn, $Title);
 $Text = mysqli_real_escape_string($conn, $Text);
 $Author = mysqli_real_escape_string($conn, $Author);
 
-$sql = "INSERT INTO forum (h_title, h_text, h_authour) VALUES ('$Title', '$Text', '$Date', '$Author')";
+$sql = "INSERT INTO help (h_title, h_text, h_authour) VALUES ('$Title', '$Text', '$Author')";
 
 
 if ($conn->query($sql) === TRUE) {
