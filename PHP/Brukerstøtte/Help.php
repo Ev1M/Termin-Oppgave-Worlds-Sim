@@ -39,7 +39,6 @@
             //writes out the information
             echo "<a href='./FAQ.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
               <h3>" . $row['h_title'] . "</h3>
-              <h3>" . $row['h_date'] . "</h3>
               <h3>" . $row['h_authour'] . "</h3>
               </div></a>";
           };
@@ -71,7 +70,6 @@
             //writes out the information
             echo "<a href='./FAQ.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
               <h3>" . $row['h_title'] . "</h3>
-              <h3>" . $row['h_date'] . "</h3>
               <h3>" . $row['h_authour'] . "</h3>
               </div></a>";
           };
@@ -88,7 +86,6 @@
             //writes out the information
             echo "<a href='./FAQ.php?title=" . $row['h_title'] . "&date=" . $row['h_date'] . "'> <div class='Forum-box'>
               <h3>" . $row['h_title'] . "</h3>
-              <h3>" . $row['h_date'] . "</h3>
               <h3>" . $row['h_authour'] . "</h3>
               </div></a>";
           };
@@ -97,9 +94,6 @@
     </div>
 
       <h1 class="Title" > Frequently Asked Questions   </h1>
-
-
-
 
     <div class="Meny">
       <a href="../../index.php">Home</a>
