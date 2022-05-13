@@ -13,13 +13,16 @@ if (isset($_POST['submit'])) {
         $message = $_POST["Message"];
     }
 
-    $mailTo = "evmya002@osloskolen.no";
-    $headers = "From: ".$mailFrom;
+    $sql = "INSERT INTO contact (c_mail , c_subject, c_message) VALUES ('$mailFrom', '$subject', '$message')";
 
-    mail($mailTo, $subject, $message, $headers);
-    header("Location: ./Contact.php?mailsend");
     
 
+    if ($conn->query($sql) === TRUE) {
+        header("Location: ./Contact.php?mailsend");
+       
+       } else {
+         echo "Error: " . $sql . "<br>" . $conn->error;
+       }
 };
 
 

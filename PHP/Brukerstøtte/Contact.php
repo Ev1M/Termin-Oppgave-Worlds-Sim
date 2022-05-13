@@ -29,12 +29,12 @@ include '../dbh.php';
             echo "<p>The E-mail that will be used is ".$_SESSION["usersEmail"]."</p>";
             echo "<input type='text' name='Subject' placeholder='Subject'><br>";
             echo "<textarea width='150px' height='150px' type='text' name='Message' placeholder='Message'></textarea><br>";
-            echo "<button type='submit' name='Submit'> Send Mail </button>";
+            echo "<button type='submit' name='submit'> Send Mail </button>";
           } else {
             echo "<input type='text' name='Email' placeholder='Email...'><br>";
             echo "<input type='text' name='Subject' placeholder='Subject'><br>";
             echo "<textarea type='text' name='Message' placeholder='Message...'></textarea><br>";
-            echo "<button type='submit' name='Submit'> Send Mail </button>";
+            echo "<button type='submit' name='submit'> Send Mail </button>";
           }
         ?>
     </form>

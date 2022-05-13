@@ -3,9 +3,6 @@
 include '../dbh.php';
  
 
-
-date_default_timezone_set('Europe/Stockholm');
-
 $Title = $_POST["Title"];
 $Text = $_POST["Text"];
 $Author = $_SESSION["userUid"];
