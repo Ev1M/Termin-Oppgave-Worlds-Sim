@@ -21,7 +21,9 @@ include 'dbh.php';
   <a href='../LoginScript/profile.php'>Profile</a>
   <a href="../../HTML/Help.html">Help</a>
   <a href="../lageForum/createForum.php">Create Post!</a>
+  <a href="./Brukerstøtte/Risikoanalyse.php">ROS</a>
   </div>
+  
   <div class="FAQ">
        <form class="skriv" method="post" action="./Brukerstøtte/lagFAQ.php" class="form">
       <input placeholder="Title" type="text" name="Title"><br>
