@@ -18,17 +18,18 @@ include 'dbh.php';
   <div class="Logo"><h1>Le Teaser<h1></div>
   <div class="Meny">
   <a href="../index.php" >Home</a>
-  <a href='../LoginScript/profile.php'>Profile</a>
-  <a href="../../HTML/Help.html">Help</a>
-  <a href="../lageForum/createForum.php">Create Post!</a>
-  <a href="./Brukerstøtte/Risikoanalyse.php">ROS</a>
+  <a href='../PHP/LoginScript/profile.php'>Profile</a>
+  <a href="../PHP/Brukerstøtte/Help.php">Help</a>
+  <a href="../PHP/lageForum/createForum.php">Create Post!</a>
+  <a href="./Brukerstøtte/Kopi av Risikoanalyse.htm">ROS</a>
+  <a href="./Framework/startbootstrap-grayscale-gh-pages/">Rammeverk</a>
   </div>
   
   <div class="FAQ">
        <form class="skriv" method="post" action="./Brukerstøtte/lagFAQ.php" class="form">
       <input placeholder="Title" type="text" name="Title"><br>
       <textarea  style="resize: none;" placeholder="Text" class="textplass" type="text" name="Text"></textarea><br>
-      <input type='submit'>
+      <input type='submit' class="submit">
      </form>
     </div>
 
@@ -74,7 +75,7 @@ if(isset($_POST["c_id"]) && !empty($_POST["c_id"])){
               <h3>".$row['c_message']."</h3>
               <form action=".htmlspecialchars($_SERVER['PHP_SELF'])." method='post' class='input'>
               <input type='Hidden' name='c_id' value=".$row['c_id']." >
-              <input type='submit' value='Delete' class='Delete'>
+              <input class='submit' type='submit' value='Delete' class='Delete'>
               </form>
               </div>";
             };
