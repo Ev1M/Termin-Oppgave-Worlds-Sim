@@ -45,6 +45,18 @@
         background-color: rgba(197, 197, 197, 0.527);
       }
 
+
+      .submit{
+        background-color: #0269A4; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
   .Meny { 
     grid-area: Meny;
     font-size: 20px;

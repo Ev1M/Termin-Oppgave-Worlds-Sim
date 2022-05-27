@@ -53,7 +53,7 @@
         <div class="Søkefelt">
           <div class="plassen">
             <!-- The searchbar -->
-          <form action="./SearchPage.php" method="POST">
+          <form action='htmlspecialchars($_SERVER['PHP_SELF'])' method="POST">
             <input type="search" alt="Søk etter din favoritt te!" id="SearchOfThaTea">
             <button> Search </button>
             </form>

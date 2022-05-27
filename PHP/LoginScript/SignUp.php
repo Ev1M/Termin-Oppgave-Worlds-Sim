@@ -17,7 +17,7 @@
        include '../menu.php';
         ?>
 
-
+<h1 class="title">Sign Up</h1>
 
 <div class="Login-Form">
 

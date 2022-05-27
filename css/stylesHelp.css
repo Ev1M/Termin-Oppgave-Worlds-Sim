@@ -25,18 +25,18 @@
   }
   
   .Art1 { grid-area: Art1; 
-  background-color: aqua;
+  background-color: #7EC3AF;
   }
   
   .Art2 { grid-area: Art2; 
-    background-color: aqua;}
+    background-color: #7EC3AF;}
   
   
   .Art3 { grid-area: Art3; 
-    background-color: aqua;}
+    background-color: #7EC3AF;}
   
   .Art4 { grid-area: Art4; 
-    background-color: aqua;}
+    background-color: #7EC3AF;}
   
 .Search {grid-area: Search;
   text-align: center;
