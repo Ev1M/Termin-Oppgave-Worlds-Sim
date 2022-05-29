@@ -61,7 +61,7 @@ if (isset($_GET["error"])) {
       <li>Your email is stricly for when you want to contact us via mail</li>
       <li>Your name is striclty for aquintence purpose, your username is what's displayed when you post.</li>
     </ul>
-    <h3>We dont sell the information! Pinky swear :)</h3>
+    <h3>By pressing the "Sign Up" button you agree to our terms of service</h3>
   </div>
 
 
