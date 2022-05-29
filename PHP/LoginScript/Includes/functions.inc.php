@@ -94,6 +94,9 @@ function createUser($conn, $name, $email, $Uid, $Pwd, $PwdRepeat){
     exit();
    
    }
+
+
+   //LOGIN START
    
    //Checks if the input fields are empty or not
    function emptyInputLogin($Uid, $pwd){
