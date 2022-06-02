@@ -1,5 +1,3 @@
-Create database DBTerminTea
-
 create table users (
     userId int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
     usersName varchar(255) NOT NULL,
