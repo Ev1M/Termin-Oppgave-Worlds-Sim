@@ -26,6 +26,7 @@ include 'dbh.php';
   </div>
   
   <div class="FAQ">
+    <h1 class="Title"> FAQ questions </h1>
        <form class="skriv" method="post" action="./Brukerstøtte/lagFAQ.php" class="form">
       <input placeholder="Title" type="text" name="Title"><br>
       <textarea  style="resize: none;" placeholder="Text" class="textplass" type="text" name="Text"></textarea><br>
@@ -69,7 +70,8 @@ if(isset($_POST["c_id"]) && !empty($_POST["c_id"])){
           if ($queryResult > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
               //writes out the information
-              echo "<div class='Help-box'>
+              echo "<h1 class='Title' >Tickets</h1>
+              <div class='Help-box'>
               <h3>From: ".$row['c_mail']."</h3>
               <h3>".$row['c_subject']."</h3>
               <h3>".$row['c_message']."</h3>

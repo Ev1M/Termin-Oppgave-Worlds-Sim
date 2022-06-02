@@ -32,7 +32,7 @@
             echo "<p>".$_SESSION["userUid"]."</p>";
             echo "<input type='submit'>";
           } else {
-            echo "<h3> You have to Login to post! <a href='../PHP/LoginScript/login.php'>(here)</a>";
+            echo "<h3> You have to Login to post! <a href='../LoginScript/login.php'>(here)</a>";
           };
     ?>
      </form>

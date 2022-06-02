@@ -45,7 +45,7 @@
         }; ?></div>
       <div class="Art2">
         <?php
-        $SQL = "SELECT * FROM help ORDER BY h_date DESC LIMIT 1";
+        $SQL = "SELECT * FROM help ORDER BY h_date ASC LIMIT 1";
         $result = mysqli_query($conn, $SQL);
         $queryResult = mysqli_num_rows($result);
         //Checks if there is any information to be written out
@@ -77,7 +77,7 @@
       </div>
       <div class="Art4">
         <?php
-        $SQL = "SELECT * FROM help ORDER BY h_authour DESC LIMIT 1";
+        $SQL = "SELECT * FROM help ORDER BY h_authour ASC LIMIT 1";
         $result = mysqli_query($conn, $SQL);
         $queryResult = mysqli_num_rows($result);
         //Checks if there is any information to be written out

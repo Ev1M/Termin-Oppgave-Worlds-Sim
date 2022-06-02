@@ -15,7 +15,7 @@ $sql = "INSERT INTO help (h_title, h_text, h_authour) VALUES ('$Title', '$Text',
 
 
 if ($conn->query($sql) === TRUE) {
- header("location: ../../index.php");
+ header("location: ./Help.php");
 
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
